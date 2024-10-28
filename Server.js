@@ -25,8 +25,8 @@ app.use('/message', require('./routes/messageroutes'));
 
 
 mongoose.set('strictQuery', false);
-//const url="mongodb+srv://bhattimudassir897:lQ7ElyC50THgmfJN@mudassirdeveloper.oixvv.mongodb.net/?retryWrites=true&w=majority&appName=mudassirdeveloper";
-url="mongodb://127.0.0.1:27017/Quranverse";
+const url="mongodb+srv://bhattimudassir897:lQ7ElyC50THgmfJN@mudassirdeveloper.oixvv.mongodb.net/?retryWrites=true&w=majority&appName=mudassirdeveloper";
+//url="mongodb://127.0.0.1:27017/Quranverse";
 // Connect to the database
 mongoose.connect(url)
   .then(async () => {
